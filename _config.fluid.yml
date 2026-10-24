@@ -1,0 +1,270 @@
+# ============================================================
+# Fluid 主题配置（本文件覆盖主题默认配置，其余项沿用默认值）
+# 完整配置说明：https://hexo.fluid-dev.com/docs/guide/
+# ============================================================
+
+# ---------------------------
+# 全局
+# ---------------------------
+
+# 浏览器标签图标（favicon）
+favicon: /img/favicon.svg
+
+# 暗色模式：菜单栏会出现切换按钮，并跟随系统偏好自动切换
+dark_mode:
+  enable: true
+  default: auto
+
+# 代码块
+code:
+  copy_btn: true
+  language:
+    enable: true
+    default: "TEXT"
+  highlight:
+    enable: true
+    line_number: true
+    lib: "highlightjs"
+    highlightjs:
+      style: "github gist"
+      style_dark: "dark"
+
+# 趣味功能
+fun_features:
+  # 副标题打字机效果
+  typing:
+    enable: true
+    typeSpeed: 80
+    cursorChar: "_"
+    loop: false
+    scope: []
+  # 文章标题锚点图标
+  anchorjs:
+    enable: true
+    element: h1,h2,h3,h4,h5,h6
+    placement: left
+    visible: hover
+    icon: ""
+  # 页面加载进度条
+  progressbar:
+    enable: true
+    height_px: 3
+    color: "#29d"
+    options: { showSpinner: false, trickleSpeed: 100 }
+
+# 图片懒加载
+lazyload:
+  enable: true
+  onlypost: false
+  offset_factor: 2
+
+# ---------------------------
+# 导航栏
+# ---------------------------
+navbar:
+  # 导航栏左侧标题
+  blog_title: "灰常小站"
+  # 导航栏毛玻璃特效
+  ground_glass:
+    enable: true
+    px: 4
+    alpha: 0.8
+  menu:
+    - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
+    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+
+# 本地搜索
+search:
+  enable: true
+  path: /local-search.xml
+  field: post
+  content: true
+
+# Banner 视差滚动
+banner:
+  parallax: true
+  width_height_ratio: 1.0
+
+# 向下滚动箭头
+scroll_down_arrow:
+  enable: true
+  banner_height_limit: 80
+  scroll_after_turning_page: true
+
+# ---------------------------
+# 页脚
+# ---------------------------
+footer:
+  content: '
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+  '
+  statistics:
+    enable: false
+
+# ---------------------------
+# 首页
+# ---------------------------
+index:
+  banner_img: /img/banner.svg
+  banner_img_height: 100
+  banner_mask_alpha: 0.3
+  slogan:
+    enable: true
+    text: "路虽远，行则将至；事虽难，做则必成。"
+  auto_excerpt:
+    enable: true
+  post_url_target: _self
+  post_meta:
+    date: true
+    category: true
+    tag: true
+  post_sticky:
+    enable: true
+    icon: "iconfont icon-top"
+
+# ---------------------------
+# 文章页
+# ---------------------------
+post:
+  banner_img: /img/banner-post.svg
+  banner_img_height: 70
+  banner_mask_alpha: 0.3
+  default_index_img: /img/banner-post.svg
+  meta:
+    author:
+      enable: false
+    date:
+      enable: true
+      format: "LL"
+    wordcount:
+      enable: true
+    min2read:
+      enable: true
+      awl: 2
+      wpm: 60
+    views:
+      enable: false
+  updated:
+    enable: false
+  toc:
+    enable: true
+    expand_all: true
+    placement: right
+    collapseDepth: 0
+  copyright:
+    enable: true
+    license: 'BY'
+    author:
+      enable: true
+    post_date:
+      enable: true
+      format: "LL"
+    update_date:
+      enable: false
+  prev_next:
+    enable: true
+  image_caption:
+    enable: true
+  image_zoom:
+    enable: true
+  comments:
+    enable: false
+
+# ---------------------------
+# 归档页 / 分类页 / 标签页
+# ---------------------------
+archive:
+  banner_img: /img/banner-post.svg
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+
+category:
+  enable: true
+  banner_img: /img/banner-post.svg
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  order_by: "-length"
+  post_order_by: "-date"
+  post_limit: 10
+
+tag:
+  enable: true
+  banner_img: /img/banner-post.svg
+  banner_img_height: 80
+  banner_mask_alpha: 0.3
+  tagcloud:
+    min_font: 15
+    max_font: 30
+    unit: px
+    start_color: "#9ab8d8"
+    end_color: "#2f4154"
+
+# ---------------------------
+# 关于页
+# ---------------------------
+about:
+  enable: true
+  banner_img: /img/banner-post.svg
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  avatar: /img/avatar.svg
+  name: "灰常小站"
+  intro: "记录技术与生活的点滴 | littlegray.cn"
+  icons:
+    - { class: "iconfont icon-github-fill", link: "https://github.com/buhenxihuan", tip: "GitHub" }
+
+# ---------------------------
+# 自定义页面
+# ---------------------------
+page:
+  banner_img: /img/banner-post.svg
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+
+# 404 页
+page404:
+  enable: true
+  banner_img: /img/banner-post.svg
+  banner_img_height: 85
+  banner_mask_alpha: 0.3
+  redirect_delay: 5000
+
+# ---------------------------
+# 友链页
+# ---------------------------
+links:
+  enable: true
+  banner_img: /img/banner-post.svg
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  items:
+    - {
+      title: "Fluid 主题",
+      intro: "优雅的 Material Design Hexo 主题",
+      link: "https://hexo.fluid-dev.com/",
+      avatar: "/img/avatar.svg"
+    }
+    - {
+      title: "Fluid 文档",
+      intro: "Fluid 使用指南",
+      link: "https://hexo.fluid-dev.com/docs/",
+      avatar: "/img/avatar.svg"
+    }
+    - {
+      title: "Fluid 仓库",
+      intro: "GitHub · fluid-dev/hexo-theme-fluid",
+      link: "https://github.com/fluid-dev/hexo-theme-fluid",
+      avatar: "/img/avatar.svg"
+    }
+  onerror_avatar: /img/avatar.svg
+  custom:
+    enable: true
+    content: '<hr><p>欢迎交换友链，申请格式：</p><ul><li>博客名称：灰常小站</li><li>博客简介：记录技术与生活的点滴</li><li>博客链接：https://littlegray.cn</li><li>头像图片：https://littlegray.cn/img/avatar.svg</li></ul>'
+  comments:
+    enable: false
