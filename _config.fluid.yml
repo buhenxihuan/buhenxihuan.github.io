@@ -84,10 +84,9 @@ search:
   field: post
   content: true
 
-# Banner 视差滚动
+# Banner（纯色块，无图像）
 banner:
-  parallax: true
-  width_height_ratio: 1.0
+  parallax: false
 
 # 向下滚动箭头
 scroll_down_arrow:
@@ -111,9 +110,9 @@ footer:
 # 首页
 # ---------------------------
 index:
-  banner_img: /img/banner.svg
-  banner_img_height: 100
-  banner_mask_alpha: 0.3
+  banner_img: /img/banner-flat.svg
+  banner_img_height: 60
+  banner_mask_alpha: 0
   slogan:
     enable: true
     text: "路虽远，行则将至；事虽难，做则必成。"
@@ -132,10 +131,10 @@ index:
 # 文章页
 # ---------------------------
 post:
-  banner_img: /img/banner-post.svg
-  banner_img_height: 70
-  banner_mask_alpha: 0.3
-  default_index_img: /img/banner-post.svg
+  banner_img: /img/banner-flat.svg
+  banner_img_height: 50
+  banner_mask_alpha: 0
+  default_index_img:
   meta:
     author:
       enable: false
@@ -180,24 +179,24 @@ post:
 # 归档页 / 分类页 / 标签页
 # ---------------------------
 archive:
-  banner_img: /img/banner-post.svg
-  banner_img_height: 60
-  banner_mask_alpha: 0.3
+  banner_img: /img/banner-flat.svg
+  banner_img_height: 45
+  banner_mask_alpha: 0
 
 category:
   enable: true
-  banner_img: /img/banner-post.svg
-  banner_img_height: 60
-  banner_mask_alpha: 0.3
+  banner_img: /img/banner-flat.svg
+  banner_img_height: 45
+  banner_mask_alpha: 0
   order_by: "-length"
   post_order_by: "-date"
   post_limit: 10
 
 tag:
   enable: true
-  banner_img: /img/banner-post.svg
-  banner_img_height: 80
-  banner_mask_alpha: 0.3
+  banner_img: /img/banner-flat.svg
+  banner_img_height: 45
+  banner_mask_alpha: 0
   tagcloud:
     min_font: 15
     max_font: 30
@@ -210,9 +209,9 @@ tag:
 # ---------------------------
 about:
   enable: true
-  banner_img: /img/banner-post.svg
-  banner_img_height: 60
-  banner_mask_alpha: 0.3
+  banner_img: /img/banner-flat.svg
+  banner_img_height: 45
+  banner_mask_alpha: 0
   avatar: /img/avatar.svg
   name: "灰常小站"
   intro: "记录技术与生活的点滴 | littlegray.cn"
@@ -223,16 +222,16 @@ about:
 # 自定义页面
 # ---------------------------
 page:
-  banner_img: /img/banner-post.svg
-  banner_img_height: 60
-  banner_mask_alpha: 0.3
+  banner_img: /img/banner-flat.svg
+  banner_img_height: 45
+  banner_mask_alpha: 0
 
 # 404 页
 page404:
   enable: true
-  banner_img: /img/banner-post.svg
-  banner_img_height: 85
-  banner_mask_alpha: 0.3
+  banner_img: /img/banner-flat.svg
+  banner_img_height: 50
+  banner_mask_alpha: 0
   redirect_delay: 5000
 
 # ---------------------------
@@ -240,9 +239,9 @@ page404:
 # ---------------------------
 links:
   enable: true
-  banner_img: /img/banner-post.svg
-  banner_img_height: 60
-  banner_mask_alpha: 0.3
+  banner_img: /img/banner-flat.svg
+  banner_img_height: 45
+  banner_mask_alpha: 0
   items:
     - {
       title: "Fluid 主题",
